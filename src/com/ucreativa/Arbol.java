@@ -12,16 +12,25 @@ public class Arbol extends Vegetal implements Actor{
 	private String marca;
 	private String nombrecientifico;
 	private double atributo1;
+		
 	
-	
-	public void
 	/**
-	 * 
+	 * @param nombre
+	 * @param tipo
+	 * @param color
+	 * @param marca
+	 * @param nombrecientifico
+	 * @param atributo1
 	 */
-	public Arbol(String nombre, String tipo, String color) {
+	public Arbol(String nombre, String tipo, String color, String marca, String nombrecientifico, double atributo1) {
 		super(nombre, tipo, color);
-		// TODO Auto-generated constructor stub
+		this.marca = marca;
+		this.nombrecientifico = nombrecientifico;
+		this.atributo1 = atributo1;
 	}
+
+
+
 	@Override
 	public void actuar() {
 		// TODO Auto-generated method stub
@@ -45,7 +54,7 @@ public class Arbol extends Vegetal implements Actor{
 	@Override
 	public void setNombre(String nombre) {
 		// TODO Auto-generated method stub
-		super.setNombre(nombre);
+		super.setNombre(nombre + ">> Hola");
 	}
 	@Override
 	public String getTipo() {
@@ -70,7 +79,7 @@ public class Arbol extends Vegetal implements Actor{
 	@Override
 	public void mostraste() {
 		// TODO Auto-generated method stub
-		super.mostraste();
+		System.out.println("Aparecio el Arbol");
 	}
 	@Override
 	public void desparecer() {
@@ -82,9 +91,8 @@ public class Arbol extends Vegetal implements Actor{
 		// TODO Auto-generated method stub
 		super.florear();
 	}
-	@Override
-	public String toString() {
-		return "Arbol [marca=" + marca + ", nombrecientifico=" + nombrecientifico + ", atributo1=" + atributo1 + "]";
+	public void florear(String detalle) {
+		System.out.println("polimorfismo en florear");
 	}
 	@Override
 	public int hashCode() {
@@ -101,13 +109,22 @@ public class Arbol extends Vegetal implements Actor{
 		// TODO Auto-generated method stub
 		return super.clone();
 	}
-	@Override
-	protected void finalize() throws Throwable {
-		// TODO Auto-generated method stub
-		super.finalize();
+
+	
+	public void darFrutos() {
+		System.out.println("Crecieron frutos");
+	}
+	public void crecer() {
+		System.out.println("Crecieron frutos");
+	}
+	public void generarsombra() {
+		System.out.println("Generando sombra");
 	}
 	
-	
+	@Override
+	public String toString() {
+		return "Arbol [marca=" + marca + ", nombrecientifico=" + nombrecientifico + ", atributo1=" + atributo1 + "]";
+	}
 
 
 }

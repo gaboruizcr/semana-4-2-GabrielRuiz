@@ -39,4 +39,7 @@ public abstract class Persona implements Actor {
 	public void despedirse() {
 		System.out.println("Chao");
 	}
+	public void comer() {
+		System.out.println("Estoy comiendo");
+	}
 }

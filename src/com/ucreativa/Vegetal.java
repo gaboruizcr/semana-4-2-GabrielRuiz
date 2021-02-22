@@ -59,7 +59,12 @@ public class Vegetal {
 	}
 
 	
-	//Constructor
+	/**
+	 * Constructor
+	 * @param nombre
+	 * @param tipo
+	 * @param color
+	 */
 	public Vegetal(String nombre, String tipo, String color) {
 		this.nombre = nombre;
 		this.tipo = tipo;

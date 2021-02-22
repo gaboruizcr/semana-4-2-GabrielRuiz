@@ -13,9 +13,15 @@ public class Profesor extends Persona {
 	private int experiencia;
 	private double salario;
 	
-	
+
 	/**
 	 * constructor
+	 * @param nombre
+	 * @param edad
+	 * @param identificacion
+	 * @param correo
+	 * @param experiencia
+	 * @param salario
 	 */
 	public Profesor(String nombre, int edad, String identificacion,String correo, int experiencia, double salario) {
 		super();
