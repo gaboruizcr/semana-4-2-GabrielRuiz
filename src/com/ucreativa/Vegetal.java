@@ -11,8 +11,7 @@ public class Vegetal {
 	private String nombre;
 	private String tipo;
 	private String color;
-	
-	
+		
 	
 	//Get - Set
 	

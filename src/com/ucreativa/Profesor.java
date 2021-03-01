@@ -14,6 +14,48 @@ public class Profesor extends Persona {
 	private double salario;
 	
 
+	@Override
+	public void actuar() {
+		// TODO Auto-generated method stub
+		super.actuar();
+	}
+
+
+	@Override
+	public void divertir() {
+		// TODO Auto-generated method stub
+		super.divertir();
+	}
+
+
+	@Override
+	public void desaparecer() {
+		// TODO Auto-generated method stub
+		super.desaparecer();
+	}
+
+
+	@Override
+	public void saludar() {
+		// TODO Auto-generated method stub
+		super.saludar();
+	}
+
+
+	@Override
+	public void despedirse() {
+		// TODO Auto-generated method stub
+		super.despedirse();
+	}
+
+
+	@Override
+	public void comer() {
+		// TODO Auto-generated method stub
+		super.comer();
+	}
+
+
 	/**
 	 * constructor
 	 * @param nombre

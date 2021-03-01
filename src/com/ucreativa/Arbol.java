@@ -115,16 +115,21 @@ public class Arbol extends Vegetal implements Actor{
 		System.out.println("Crecieron frutos");
 	}
 	public void crecer() {
-		System.out.println("Crecieron frutos");
+		System.out.println("Arbol crecio");
 	}
 	public void generarsombra() {
-		System.out.println("Generando sombra");
+		System.out.println("Arbol generando sombra");
 	}
-	
+
+
+
 	@Override
 	public String toString() {
-		return "Arbol [marca=" + marca + ", nombrecientifico=" + nombrecientifico + ", atributo1=" + atributo1 + "]";
+		return "Arbol [marca=" + marca + ", nombrecientifico=" + nombrecientifico + ", atributo1=" + atributo1
+				+ ", Nombre=" + getNombre() + ", Tipo=" + getTipo() + ", Color=" + getColor() + "]";
 	}
+	
+
 
 
 }
